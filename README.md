@@ -57,6 +57,33 @@
 
 ---
 
+## ⚠️ Observação sobre instalação de dependências (`npm install`)
+Durante o desenvolvimento deste projeto utilizando **Angular 10** com **Node.js v14**, foi identificado um comportamento incomum ao executar o comando `npm install`.
+
+Problema:
+Ao criar o projeto com **Angular CLI** e tentar instalar as dependências com npm install, o seguinte erro era apresentado:
+
+   ```
+Error: Cannot find module 'node:path'
+   ```
+
+### Causa:
+Esse problema está relacionado à versão antiga do `npm` que acompanha o **Node.js v14**, a qual não consegue resolver corretamente as dependências do projeto — especialmente pacotes modernos como `@schematics/angular`. Isso é agravado em ambientes Windows.
+
+### Solução utilizada:
+- Criar o projeto com Angular CLI utilizando Node.js v14.
+- Desinstalar o **Node.js v14** e instalar a versão mais recente do **Node.js (v22)**.
+- Rodar `npm install` com a versão mais recente.
+- Após a instalação bem-sucedida, reinstalar o Node.js v14 para garantir compatibilidade com o Angular 10.
+
+Alternativamente, é possível atualizar apenas o `npm` para uma versão mais recente (ex: `npm@8`) mesmo usando Node v14, com o comando:
+
+   ```
+   npm install -g npm@8
+   ````
+
+---
+
 ## 📂 Estrutura de Pastas
 
 ```
