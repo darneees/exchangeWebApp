@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  position: relative;
+  background-color: #FFFFFF;
+  width: 30%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  gap: 1.5rem;
+  padding: 1.5rem;
+}
+
+main .line {
+  width: 90%;
+  height: 0.1rem;
+  background-color: #D9D9D9;
+  top: 0;
+}
+
+.exchange-rate {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+
+.exchange-rate h1 {
+  color: #07b0fb;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.exchange-rate button {
+  background-color: #07b0fb;
+  color: #ffffff;
+  width: 100%;
+  height: 3.5rem;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+.exchange-rate input {
+  background-color: #f4f4f4;
+  color: #3f3f3f;
+  border: none;
+  width: 100%;
+  height: 4rem;
+  padding: 0 1rem;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.exchange-rate input:focus {
+  outline: none;
+  border-bottom: 0.1rem solid #07b0fb;
+}
+
+.exchange-rate input::placeholder {
+  color:rgba(63, 63, 63, 0.52);
+}
+
+.errorMessage {
+  color: #ff0000;
+  font-size: 1rem;
+  text-align: center;
+  width: 100%;
+}
+
+.exchange-rate-value {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.exchange-date {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.exchange-date h3 {
+  font-size: 1.2rem;
+  color: #07b0fb;
+}
+
+.exchange-date > article {
+  display: flex;
+  flex-direction: column;
+  gap: .15rem;
+}
+
+.exchange-date article h4 {
+  color: #262626;
+  font-size: 1rem;
+}
+
+.exchange-date article p {
+  color:rgba(38, 38, 38, 0.5);
+  font-size: 0.8rem;
+}
+
+.exchange-result {
+  background-color: #E3F6FF;
+  color: #07b0fb;
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.exchange-result h3 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: #07b0fb;
+}
+
+.exchange-daily {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  border-bottom: 0.15rem solid #07b0fb;
+}
+
+
+.exchange-daily h2 {
+  color: #262626;
+  font-size: 1rem;
+}
+
+.exchange-daily .lucide-plus {
+  color: #07b0fb;
+}
+
+footer {
+  background-color: #07b0fb;
+  color: #E3F6FF;
+  width: 100%;
+  height: 2.5rem;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* resposive design */
+@media (780px<=width<=999px) {
+  main {
+    width: 50%;
+    height: auto;
+  }
+
+  .exchange-rate {
+    width: 90%;
+  }
+
+  main .line {
+    width: 90%;
+  }
+
+  .exchange-rate h1 {
+    font-size: 1.3rem;
+  }
+
+  .exchange-rate button {
+    font-size: 1rem;
+  }
+
+  .exchange-rate input {
+    height: 4rem;
+    font-size: 1rem;
+  }
+}
+
+@media (430px<=width<=779px) {
+  main {
+    width: 70%;
+    height: auto;
+  }
+
+  .exchange-rate {
+    width: 85%;
+  }
+
+  main .line {
+    width: 85%;
+  }
+
+  .exchange-rate h1 {
+    font-size: 1.5rem;
+  }
+
+  .exchange-rate button {
+    font-size: 1.2rem;
+  }
+
+  .exchange-rate input {
+    height: 4rem;
+    font-size: 1rem;
+  }
+}
+
+
+@media (max-width: 429px) {
+
+  main {
+    width: 100%;
+    height: auto;
+  }
+
+  .exchange-rate {
+    width: 85%;
+  }
+
+  main .line {
+    width: 85%;
+  }
+
+  .exchange-rate h1 {
+    font-size: 1.5rem;
+  }
+
+  .exchange-rate button {
+    font-size: 1rem;
+  }
+
+  .exchange-rate input {
+    height: 3.5rem;
+    font-size: 0.9rem;
+  }
+}

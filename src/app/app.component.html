@@ -1,0 +1,44 @@
+<main>
+  <picture><img src="../assets/images/actionLabs.jpg" alt="logo action labs"
+      title="action labs"></picture>
+
+  <span class="line"></span>
+
+  <section class="exchange-rate">
+    <h1>BRL Exchange Rate</h1>
+    <input
+      type="text"
+      placeholder="Enter the currency code: e.g. USD"
+      [(ngModel)]="currencyCode"
+      (ngModelChange)="onCurrencyCodeChange()" />
+    <button (click)="getExchangeRate()">Exchange result</button>
+
+    <p class="errorMessage" *ngIf="errorMessage">
+      {{ errorMessage }}
+    </p>
+  </section>
+
+  <span class="line"></span>
+
+  <section class="exchange-rate-value" *ngIf="exchangeRate !== null">
+    <article class="exchange-date">
+      <article>
+        <h4>Exchange rate now</h4>
+        <p>{{ timestamp }}</p>
+      </article>
+
+      <h3>{{ currencyCode.toUpperCase() }} / BRL</h3>
+    </article>
+
+    <article class="exchange-result">
+      <h3>R$ {{ exchangeRate | number:'1.2-2' }}</h3>
+    </article>
+
+    <article class="exchange-daily">
+      <h2>LAST 30 DAYS</h2>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus-icon lucide-plus"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
+    </article>
+  </section>
+
+  <footer>Copyright 2025 - Action Labs</footer>
+</main>
