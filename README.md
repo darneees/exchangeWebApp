@@ -77,3 +77,12 @@ src/
 ├── index.html                                  # HTML base da aplicação
 ├── main.ts                                     # Arquivo principal que bootstrapa o app
 ```
+
+---
+
+## 🖼️ Telas
+
+![tela 01](https://github.com/user-attachments/assets/39906f78-441a-4e40-9a7c-aeb6d2492950)
+
+
+![tela 02](https://github.com/user-attachments/assets/87711c00-8f72-4bda-872b-0441b6cbfb6d)
