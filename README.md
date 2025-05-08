@@ -59,7 +59,7 @@
 
 ## 📂 Estrutura de Pastas
 
-```bash
+```
 src/
 ├── app/
 │   ├── services/
