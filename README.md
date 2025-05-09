@@ -57,6 +57,15 @@
 
 ---
 
+## 🌍 Dica: Códigos de moedas para testes
+Para testar o projeto com diferentes moedas além do exemplo padrão, você pode consultar uma lista completa de códigos de moeda ISO 4217 no link abaixo:
+
+🔗 Tabela de códigos de moedas - [IBAN](https://pt.iban.com/currency-codes)
+
+Basta copiar o código desejado (como `USD`, `EUR`, `JPY`, `AUD`, etc.) e utilizá-lo na aplicação para visualizar sua cotação em relação ao Real (`BRL`).
+
+---
+
 ## ⚠️ Observação sobre instalação de dependências (`npm install`)
 Durante o desenvolvimento deste projeto utilizando **Angular 10** com **Node.js v14**, foi identificado um comportamento incomum ao executar o comando `npm install`.
 
