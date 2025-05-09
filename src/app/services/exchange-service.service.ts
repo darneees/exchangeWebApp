@@ -1,14 +1,15 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
-import { map, catchError } from 'rxjs/operators'; 
+import { map, catchError } from 'rxjs/operators';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ExchangeServiceService {
   private apiUrl = 'https://api-brl-exchange.actionlabs.com.br/api/1.0/open/currentExchangeRate';
-  private apiKey = 'RVZGOGHEV2KORLNA';
+  private apiKey = environment.apiKey;
 
   constructor(private http: HttpClient) {}
 
